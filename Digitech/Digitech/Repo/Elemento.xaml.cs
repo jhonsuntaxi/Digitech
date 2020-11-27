@@ -20,9 +20,9 @@ namespace Digitech.Repo
     public partial class Elemento : ContentPage
     {
         public int IdSeleccion;
-        private SQLiteAsyncConnection _conn;
-        IEnumerable<Cliente> resultDelete;
-        IEnumerable<Cliente> resultUpdate;
+        private SQLiteAsyncConnection _conn;//conexion creada
+        IEnumerable<Cliente> resultDelete; // cliente eliminado
+        IEnumerable<Cliente> resultUpdate; // cliente actualizado
         public Elemento(int id)
         {
             _conn = DependencyService.Get<Database>().GetConnection();
