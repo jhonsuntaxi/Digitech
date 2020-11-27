@@ -12,8 +12,8 @@
                     <Entry x:Name="txtNombre" Placeholder="Ingrese su nombre"/>
                     <Entry x:Name="txtUsuario" Placeholder="Ingrese su Usuario"/>
                     <Entry x:Name="txtPasswd" Placeholder="Ingrese la Cotraseña" IsPassword="True"/>
-                    <Button x:Name="btnRegistrar" Text="Registrarse" Clicked="btnRegistrar_Clicked" BackgroundColor="#E74C3C"
-                            TextColor="White" VerticalOptions="EndAndExpand"/>
+                    <Button x:Name="btnRegistrar" Text="Registrarse" Clicked="btnRegistrar_Clicked" BackgroundColor="Black"
+                            TextColor="Purple" VerticalOptions="EndAndExpand"/>
                 </StackLayout>
             </Frame>
         </StackLayout>

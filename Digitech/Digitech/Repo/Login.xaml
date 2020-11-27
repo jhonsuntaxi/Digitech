@@ -12,7 +12,7 @@
 
              <Entry Placeholder="Ingrese tu usuario" Keyboard="Email"  x:Name="usuario"></Entry>
             <Entry Placeholder="Ingrese tu Contraseña" IsPassword="True" x:Name="contra"></Entry>
-            <Button Text="Ingresar" BackgroundColor="Black" TextColor="BlueViolet"  Clicked="Button_Clicked"></Button>
+            <Button Text="Ingresar" BackgroundColor="Black" TextColor="Purple"  Clicked="Button_Clicked"></Button>
             <Button  Text="Registrarte" Clicked="Button_Clicked_1"></Button>
         </StackLayout>
             
