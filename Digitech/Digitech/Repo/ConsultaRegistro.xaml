@@ -21,6 +21,12 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
+                    <StackLayout VerticalOptions="EndAndExpand">
+                        <Button x:Name="btnRegresar" Margin="0"  TextColor="White" Text="Regresar" FontSize="16" BackgroundColor="#FF00FF"
+                                FontAttributes="Bold" Clicked="btnRegresar_Clicked">
+                        </Button>
+                    </StackLayout>
+
                 </StackLayout>
             </Frame>
         </StackLayout>

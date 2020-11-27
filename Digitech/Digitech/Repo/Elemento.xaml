@@ -21,6 +21,9 @@
                             TextColor="white"/>
                     <Button x:Name="btnEliminar" Text="Eliminar" Clicked="btnEliminar_Clicked" BackgroundColor="#FF00FF"
                             TextColor="White"/>
+                    <Button x:Name="btnRegresar" Margin="0"  TextColor="White" Text="Regresar" BackgroundColor="DarkCyan"
+                                FontAttributes="Bold" Clicked="btnRegresar_Clicked">
+                    </Button>
                 </StackLayout>
             </Frame>
         </StackLayout>

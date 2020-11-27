@@ -52,5 +52,10 @@ namespace Digitech
             }
 
         }
+        string usuario;
+        private void btnRegresar_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Menu(usuario));
+        }
     }
 }

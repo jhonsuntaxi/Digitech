@@ -73,5 +73,10 @@ namespace Digitech.Repo
         {
             return db.Query<Cliente>("DELETE FROM Cliente WHERE Id = ?", id);
         }
+
+        private void btnRegresar_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ConsultaRegistro());
+        }
     }
 }

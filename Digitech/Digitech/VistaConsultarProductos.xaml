@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Digitech.VistaConsultarProductos">
+   
+        <StackLayout>
+            <Label Text="PRODUCTOS" FontSize="20" HorizontalTextAlignment="Center"/>
+            <Label x:Name="texto" Text="" />
+
+        <Button Text="Consultar" x:Name="btnConsultar" Clicked="btnConsultar_Clicked" BackgroundColor="Blue" TextColor="White"/>
+
+            <ListView x:Name="MyListView" ItemSelected="MyListView_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label x:Name="lblNombre" Text="{Binding nombreProducto}" />
+                                <Label x:Name="lblPrecio" Text="{Binding precioProducto}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button x:Name="btnVistaInsertar" Text="Ir a Insertar" Clicked="btnVistaInsertar_Clicked" BackgroundColor="Blue" TextColor="White"/>
+            <Button x:Name="btnRegresar" Text="Regresar" Clicked="btnRegresar_Clicked" BackgroundColor="Purple" TextColor="White"/>
+
+    </StackLayout>
+
+</ContentPage>

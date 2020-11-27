@@ -25,15 +25,17 @@ namespace Digitech
 
         private void Button_Clicked(object sender, EventArgs e)
         {
+            string usuario = txtUsuario.Text;
             try
             {
                 var databasePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "uisrael.db3");
                 var db = new SQLiteConnection(databasePath);
                 db.CreateTable<Cliente>();
-                IEnumerable<Cliente> resultado = SelectWhere(db, usuario.Text, contra.Text);
+                IEnumerable<Cliente> resultado = SelectWhere(db, txtUsuario.Text, contra.Text);
                 if (resultado.Count() > 0)
                 {
-                    Navigation.PushAsync(new ConsultaRegistro());
+                    Navigation.PushAsync(new Menu(usuario));
+                    
                 }
                 else
                 {
