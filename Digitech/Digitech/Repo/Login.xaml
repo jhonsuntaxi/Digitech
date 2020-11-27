@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Digitech.Login">
+
+    <ContentPage.Content>
+
+        <ScrollView>
+            <StackLayout Padding="30" Spacing="30">
+            <Image Source="digitech.png" WidthRequest="250" HeightRequest="250"/>
+
+             <Entry Placeholder="Ingrese tu usuario" Keyboard="Email"  x:Name="usuario"></Entry>
+            <Entry Placeholder="Ingrese tu Contraseña" IsPassword="True" x:Name="contra"></Entry>
+            <Button Text="Ingresar" BackgroundColor="Black" TextColor="BlueViolet"  Clicked="Button_Clicked"></Button>
+            <Button  Text="Registrarte" Clicked="Button_Clicked_1"></Button>
+        </StackLayout>
+            
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
