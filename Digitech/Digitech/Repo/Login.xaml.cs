@@ -27,9 +27,10 @@ namespace Digitech
         {
             try
             {
+                //variables que acceden a la base de datos 
                 var databasePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "uisrael.db3");
                 var db = new SQLiteConnection(databasePath);
-                db.CreateTable<Cliente>();
+                db.CreateTable<Cliente>();//tabla cliente 
                 IEnumerable<Cliente> resultado = SelectWhere(db, usuario.Text, contra.Text);
                 if (resultado.Count() > 0)
                 {
